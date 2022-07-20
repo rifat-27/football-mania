@@ -1,0 +1,459 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+body {
+  margin: 0;
+  background-color: azure;
+  font-family: 'Titillium Web', sans-serif;
+  height: 100vh;
+}
+
+/* Banner Section Styling */
+.banner {
+  display: flex;
+  background-color: rgb(9, 9, 24);
+  color: azure;
+  margin: 50px 140px;
+  border-radius: 20px;
+  width: 82.5%;
+  height: 560px;
+}
+
+.banner-text {
+  width: 40%;
+  height: 90%;
+  margin: 80px 106px;
+  padding-bottom: 60px;
+}
+
+/* Banner Animation */
+@keyframes banner-slide {
+  from {
+    left: -100px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+.banner-text-item {
+  position: relative;
+  margin-bottom: 30px;
+  animation: banner-slide 3s;
+  animation-timing-function: ease;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3.2em;
+  font-weight: 700;
+  color: azure;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.banner-text > .banner-text-item > button {
+  padding-left: 20px;
+  height: 56px;
+  width: 187px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: azure;
+  background-color: rgb(255, 106, 0);
+  border-radius: 10px;
+}
+
+.banner-text > .banner-text-item > button > i {
+  margin: 5px 15px 5px;
+}
+
+@keyframes image-slide {
+  from {
+    right: -100px;
+  }
+  to {
+    right: 0px;
+  }
+}
+.banner-image {
+  position: relative;
+  animation: image-slide 3s;
+  animation-timing-function: ease-out;
+}
+.banner-image > img {
+  position: absolute;
+  top: 135px;
+  right: -396px;
+  transform: scale(1.5);
+}
+
+/* Blog Section Styling */
+.blog {
+  margin: 130px 140px 50px;
+  display: flex;
+}
+
+.blog-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 7px;
+  border: none;
+  height: 290px;
+  width: 290px;
+  background-color: rgb(9, 9, 24);
+}
+
+.blog-menu-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: azure;
+  color: rgb(9, 9, 24);
+  text-decoration: none;
+  align-content: center;
+}
+
+#option-3 {
+  background-color: rgb(255, 106, 0);
+  color: azure;
+}
+
+.blog-menu-option:hover {
+  background-color: rgb(255, 106, 0);
+  color: azure;
+}
+
+.blog-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  margin-left: 24px;
+  gap: 24px;
+}
+
+.blog-info {
+  border-color: rgb(9, 9, 24);
+  border-radius: 0px 0px 7px 7px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0px 15px 15px 15px;
+}
+.blog-item-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.blog-item-card > .blog-image > img {
+  display: block;
+  margin: auto;
+
+  height: auto;
+  max-height: 100%;
+
+  width: auto;
+  max-width: 100%;
+}
+
+.blog-item-button {
+  margin-top: 25px;
+  width: 100px;
+  height: 32px;
+  border-radius: 7px;
+  border-color: rgb(9, 9, 24);
+  background-color: azure;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.blog-time {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.blog-time > span {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.blog-time > p {
+  margin-left: 12px;
+}
+
+.blog-time > span > p {
+  margin-left: 12px;
+}
+
+/* View All Button For Tab */
+.blog-view-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.btn {
+  margin: 30px 40px 40px;
+  width: 200px;
+  height: 55px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 7px;
+  background-color: rgb(255, 106, 0);
+  color: azure;
+  display: none;
+}
+
+/* Footer Section Styling */
+.footer {
+  background-color: rgb(9, 9, 24);
+  text-align: center;
+  margin: 100px 0px 0px;
+  height: 70%;
+}
+
+.footer > h1 {
+  font-size: 50px;
+  padding: 100px 0px 50px;
+}
+
+hr {
+  color: rgb(72, 75, 85);
+  background-color: rgb(72, 75, 85);
+  border: none;
+  height: 1px;
+  width: 80%;
+  text-align: center;
+}
+.footer-menu {
+  display: flex;
+  margin: 60px 350px 50px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-menu > p {
+  color: azure;
+}
+
+.social {
+  color: azure;
+  background-color: rgb(9, 9, 24);
+  border: none;
+  margin: 40px 10px 0px;
+  transform: scale(1.5);
+}
+
+/* Mobile View Styling */
+@media screen and (max-width: 576px) {
+  .banner {
+    flex-direction: column;
+    background-color: rgb(9, 9, 24);
+    width: 90%;
+    height: 550px;
+    margin: 5% 5%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+  .banner-text-item {
+    margin: 0 30px 20px;
+  }
+  .banner-text {
+    text-align: center;
+    width: 100%;
+    height: 90%;
+    margin: 0;
+    padding-bottom: 0px;
+  }
+  p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px 20px;
+  }
+  .banner-image > img {
+    top: -279px;
+    right: -182px;
+    transform: scale(0.8);
+  }
+  .blog {
+    flex-direction: column;
+    margin: 5%;
+    align-items: center;
+  }
+  .blog-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 7px;
+    border: none;
+    height: 30vh;
+    margin: 0;
+    background-color: azure;
+  }
+  .blog-menu-option {
+    margin: 10px 20px;
+    border: rgb(213, 213, 213) 1px;
+    border-style: solid;
+  }
+  #option-1 {
+    width: inherit;
+  }
+  #option-3 {
+    border-style: none;
+  }
+  .blog-items {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    margin-top: 24px;
+    margin-left: 0px;
+  }
+  .blog-item-card > .blog-image > img {
+    width: 100%;
+  }
+  .footer {
+    margin: 0px;
+    height: 70%;
+  }
+
+  .footer > h1 {
+    font-size: 40px;
+    padding: 25px 0px 25px;
+  }
+  .footer-menu > p {
+    color: rgb(203, 203, 203);
+    height: 50px;
+  }
+  .footer-menu {
+    margin: 30px 0 0;
+    flex-direction: column;
+  }
+  .social {
+    margin: 20px 10px 0px;
+  }
+}
+
+/* Tab View Styling */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .banner {
+    overflow: hidden;
+    background-color: rgb(9, 9, 24);
+    width: 94%;
+    height: 470px;
+    margin: 3% 3%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2em;
+    font-weight: 700;
+  }
+  .banner-text-item {
+    margin: 0 20px 20px;
+  }
+  .banner-text {
+    height: 90%;
+    width: 45%;
+    margin: 40px 0px 30px 40px;
+    padding-bottom: 0px;
+  }
+  .banner-image > img {
+    top: -148px;
+    right: -36px;
+    transform: scale(1.25);
+  }
+  .blog {
+    flex-direction: column;
+    margin: 0px 3%;
+    align-items: center;
+  }
+  .blog-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    border: none;
+    height: 22vh;
+    width: 100%;
+    margin: 0;
+    background-color: azure;
+  }
+  .blog-menu-option {
+    border: rgb(213, 213, 213) 1px;
+    border-style: solid;
+  }
+
+  #option-3 {
+    border-style: none;
+  }
+  .blog-items {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: 24px 0;
+  }
+
+  .blog-item-card > .blog-image > img {
+    width: 100%;
+  }
+
+  .btn {
+    display: block;
+  }
+  .footer {
+    margin: 0px;
+    height: 50%;
+  }
+
+  .footer > h1 {
+    font-size: 40px;
+    padding: 25px 0px 25px;
+  }
+  .footer-menu > p {
+    color: rgb(203, 203, 203);
+    height: 50px;
+    width: 25%;
+  }
+  .footer-menu {
+    position: relative;
+    margin: 30px 40px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #footer-text-goal-app {
+    position: absolute;
+    top: 45px;
+    right: 331px;
+  }
+  #footer-text-goal-live {
+    position: absolute;
+    top: 45px;
+    right: 166px;
+  }
+  .social {
+    margin: 60px 10px 0px;
+  }
+}
